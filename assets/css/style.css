@@ -430,8 +430,17 @@ a {
   background: #2e2100;
 }
 
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
 .feedback .feedback-item {
   display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: all ease 0.5s;
 }
 
 .feedback-item .avatar {
@@ -477,6 +486,7 @@ a {
 .feedback-item .content {
   width: 66%;
   margin-left: auto;
+  /* justify-content: space-between; */
 }
 
 .feedback-item blockquote {
