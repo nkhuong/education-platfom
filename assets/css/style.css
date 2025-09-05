@@ -495,3 +495,51 @@ a {
   font-style: italic;
   line-height: 154%; /* 153.846% */
 }
+
+/* Features */
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+  /* background: #634700; */
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .images {
+  display: flex;
+  gap: 30px;
+}
+
+.features .images img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.features .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%; /* = 470 / 1170 (main-content)*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .desc {
+  margin-top: 1.6rem;
+  color: #5f5b53;
+  line-height: 175%; /* 175% */
+}
+
+.features .cta-btn {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  background: var(--primary-color);
+}
