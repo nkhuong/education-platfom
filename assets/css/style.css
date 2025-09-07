@@ -496,7 +496,7 @@ a {
   line-height: 154%; /* 153.846% */
 }
 
-/* Features */
+/* Features 1*/
 .features {
   margin-top: 135px;
   padding: 65px 0;
@@ -541,5 +541,116 @@ a {
   margin-top: 32px;
   width: 137px;
   height: 50px;
+  background: var(--primary-color);
+}
+
+/* Features 2*/
+.features-2nd {
+  margin-top: 70px; /* 200-130, 130 = 65*2 ; 65: padding for each block */
+}
+
+.features-2nd .body {
+  flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+  width: 49%; /* = 570/1170 (main-content)*/
+}
+
+.features-2nd .images img {
+  width: 470px;
+  height: 440px;
+}
+
+/* Blogs */
+.blogs {
+  margin-top: 135px; /* 200 - 65 */
+  padding: 96px 0;
+  background: #fffcf4;
+}
+
+.blogs .blog-top {
+  text-align: center;
+}
+
+.blogs .blog-top .desc {
+  margin: 16px auto 0;
+  width: 448px;
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 175%; /* 175% */
+}
+
+.blogs .blog-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+
+.blogs .item {
+  width: 33.33%;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.blogs .item:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.blogs .item .thumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.blogs .item .info {
+  padding: 20px 20px 28px;
+}
+
+.blogs .item .date {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 186%; /* 185.714% */
+  padding-bottom: 12px;
+}
+.blogs .item .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  margin-right: 4px;
+}
+
+.blogs .item .date::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: -27px;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+
+.blogs .item .title {
+  margin-top: 12px;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 175%; /* 175% */
+}
+
+.blogs .item .btn {
+  margin-top: 12px;
+}
+
+.blogs .item .btn:hover {
   background: var(--primary-color);
 }
